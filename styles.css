@@ -1,0 +1,120 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+html {
+  font-size: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: hsl(240, 6%, 50%);
+}
+
+body {
+  max-width: 1440px;
+  min-width: 375px;
+  padding: 10% 0;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.page {
+  width: 330px;
+  /* height: 510px; */
+  background-color: #fff;
+  background-image: url(./images/bg-pattern-mobile.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 30%;
+  position: relative;
+}
+
+.pic {
+  width: 240px;
+  position: absolute;
+  bottom: 85%;
+}
+
+.box {
+  position: absolute;
+  bottom: 90%;
+  right: 60%;
+  width: 90px;
+}
+
+h1 {
+  text-align: center;
+  margin: 50% 0 10%;
+  font-size: 2rem;
+  color:  hsl(237, 12%, 33%);
+}
+
+/*container for the questions and answers*/
+.questions {
+  width: 90%;
+}
+
+details .arrow {
+  transition: transform .5s;
+}
+
+details[open] .arrow {
+  transform: rotate(180deg);
+}
+
+summary {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+summary p {
+  font-size: 1.15rem;
+}
+summary p:hover {
+  color:hsl(237, 12%, 33%);
+}
+
+.answer {
+  margin-top: 5%;
+}
+
+hr {
+  margin: 5% 0;
+  border: none;
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+
+hr:last-of-type {
+  margin-bottom: 15%;
+}
+
+.attribution { 
+  font-size: .65em; 
+  color:hsl(237, 12%, 33%);
+  text-align: center;
+  z-index: 1;
+  padding-top: 5%; 
+}
+
+.attribution a {
+   color: hsl(228, 45%, 44%);
+   font-size: 1em; 
+  }
