@@ -73,6 +73,10 @@ h1 {
   width: 90%;
 }
 
+details {
+  cursor: pointer;
+}
+
 /*arrow used with faq questions*/
 details .arrow {
   transition: transform .5s;
