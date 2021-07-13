@@ -46,12 +46,14 @@ body {
   position: relative;
 }
 
+/*image of woman with screen used in mobile layout*/
 .pic {
   width: 240px;
   position: absolute;
   bottom: 85%;
 }
 
+/*image of @-box*/
 .box {
   position: absolute;
   bottom: 90%;
@@ -71,14 +73,17 @@ h1 {
   width: 90%;
 }
 
+/*arrow used with faq questions*/
 details .arrow {
   transition: transform .5s;
 }
 
+/*arrow style when faq question opened*/
 details[open] .arrow {
   transform: rotate(180deg);
 }
 
+/*faq question containers*/
 summary {
   display: flex;
   align-items: flex-start;
@@ -88,12 +93,15 @@ summary {
 summary p {
   font-size: 1.15rem;
 }
+
+/*hover effect for faq questions*/
 summary p:hover {
   color:hsl(237, 12%, 33%);
 }
 
 .answer {
   margin-top: 5%;
+  line-height: 1.35rem;
 }
 
 hr {
@@ -118,3 +126,42 @@ hr:last-of-type {
    color: hsl(228, 45%, 44%);
    font-size: 1em; 
   }
+
+/*===========media queries===========*/
+@media screen and (min-width: 768px) {
+  body {
+    padding: 5% 0;
+  }
+  .page {
+    width: 700px;
+    margin-top: 5%;
+    padding: 5%;
+    background-size: 100%, 50%;
+    background-position: right 400px bottom -60px, right 407px top 60px;
+    background-image: url(./images/bg-pattern-desktop.svg), url(./images/illustration-woman-online-desktop.svg);
+  }
+  .pic {
+    display: none;
+  }
+  .box {
+    bottom: 30%;
+    right: 90%;
+    width: 140px;
+  }
+  .questions {
+    width: 50%;
+    align-self: flex-end;
+  }
+  h1 {
+    text-align: left;
+    margin: 5% 0 10%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .page {
+    background-position: right 400px bottom -30px, right 407px top 60px;
+  }
+  .box {
+    bottom: 34%;
+  }
+}
